@@ -1,0 +1,9 @@
+b1794d4abd775b91dc5b7d420449359c *DESCRIPTION
+329c3ac5fe1aa16d2941a9e16f3f8001 *NAMESPACE
+47d889e468846bebade91807b037cfe1 *R/bspline-source-adjusted_classes.R
+72c4d9b553adec902103d20276f33a3e *man/bshazard-internal.Rd
+e704b5e3799ca1158ecd960bd4660267 *man/bshazard-package.Rd
+552a43de2f38d37472165551cc7f7216 *man/bshazard.Rd
+773b88ac6e94473437f4550db41ef565 *man/plot.bshazard.Rd
+02276186ef9caa74f58961d45622a1c2 *man/print.bshazard.Rd
+ef7ef7dfac77e6ca54e08544a8fc4e78 *man/summary.bshazard.Rd
