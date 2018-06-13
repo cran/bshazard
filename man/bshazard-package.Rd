@@ -12,22 +12,17 @@ linear mixed models. Left truncated and right censoring data are
 allowed.
 }
 \details{
-\tabular{ll}{
-Package: \tab bshazard\cr
-Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2014-02-01\cr
-License: \tab GPL-2\cr
-}
-~~ An overview of how to use the package, including the most important functions ~~
+The DESCRIPTION file:
+\packageDESCRIPTION{bshazard}
+\packageIndices{bshazard}
 }
 \author{
 Paola Rebora, Agus Salim, Marie Reilly
 Maintainer: Paola Rebora <paola.rebora@unimib.it>
 }
 \references{
-Rebora P, Salim A, Reilly M bshazard: A Flexible Tool for Nonparametric
-Smoothing of the Hazard Function
+Rebora P, Salim A, Reilly M (2014) bshazard: A Flexible Tool for Nonparametric
+Smoothing of the Hazard Function.The R Journal Vol. 6/2:114-122.
 
 Lee Y, Nelder JA, Pawitan Y (2006). Generalized Linear Models with Random Effects: Unified
 Analysis via H-likelihood, volume 106. Chapman & Hall/CRC.
@@ -35,4 +30,12 @@ Analysis via H-likelihood, volume 106. Chapman & Hall/CRC.
 Pawitan Y (2001). In All Likelihood: Statistical Modelling and Inference Using Likelihood.
 Oxford University Press
 }
-\keyword{ hazard rate }
+\keyword{ survival }
+\keyword{ nonparametric }% __ONLY ONE__ keyword per line
+\keyword{ smooth }  
+
+\examples{
+data(lung,package="survival")
+  fit<-bshazard(Surv(time, status==2) ~ 1,data=lung)
+  plot(fit)
+}

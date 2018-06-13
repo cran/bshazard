@@ -30,10 +30,11 @@ Print number of observations, number of events, total person-time and overall ra
 \seealso{
 bshazard,summary.bshazard,plot.bshazard}
 \examples{
+data(lung,package="survival")
  fit<-bshazard(Surv(time, status==2) ~ 1,data=lung)
 print(fit)    
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+\keyword{ survival }
+\keyword{ nonparametric }% __ONLY ONE__ keyword per line

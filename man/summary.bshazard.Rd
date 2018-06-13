@@ -1,7 +1,7 @@
 \name{summary.bshazard}
 \alias{summary.bshazard}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
+\title{ 
 Summary of hazard curve}
 \description{
 Returns a list containing the hazard curve and confidence limits for the curve.}
@@ -48,6 +48,7 @@ Number of digits to print}
 \seealso{
 bshazard,print.bshazard,plot.bshazard}
 \examples{
+data(lung,package="survival")
  summary(bshazard(Surv(time, status==2) ~ 1,data=lung))
  }
 
