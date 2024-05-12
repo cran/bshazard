@@ -12,9 +12,8 @@ Print number of observations, number of events, total person-time and overall ra
 \arguments{
   \item{x}{
  	the result of a call to the bshazard function. }
- \item{\dots}{
- %%     ~~Describe \code{\dots} here~~
-}
+ \item{\dots}{	
+other arguments that will be passed forward}
  }
 \value{
 \item{Number of records}{number of records in input data}
@@ -30,7 +29,7 @@ Print number of observations, number of events, total person-time and overall ra
 \seealso{
 bshazard,summary.bshazard,plot.bshazard}
 \examples{
-data(lung,package="survival")
+data(cancer,package="survival")
  fit<-bshazard(Surv(time, status==2) ~ 1,data=lung)
 print(fit)    
 }

@@ -15,9 +15,8 @@ Returns a list containing the hazard curve and confidence limits for the curve.}
  }
   \item{digits}{
 Number of digits to print}
- \item{\dots}{
- %%     ~~Describe \code{\dots} here~~
-}
+ \item{\dots}{	
+other arguments that will be passed forward}
 }
 \value{
 %%  ~Describe the value returned
@@ -48,7 +47,7 @@ Number of digits to print}
 \seealso{
 bshazard,print.bshazard,plot.bshazard}
 \examples{
-data(lung,package="survival")
+data(cancer,package="survival")
  summary(bshazard(Surv(time, status==2) ~ 1,data=lung))
  }
 

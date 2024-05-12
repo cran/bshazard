@@ -118,7 +118,7 @@ Maintainer: Paola Rebora <paola.rebora@unimib.it>
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 %\seealso{\code{\link{help(survival}}}
 \examples{
-data(lung,package="survival")
+data(cancer,package="survival")
   fit<-bshazard(Surv(time, status==2) ~ 1,data=lung)
   plot(fit$time, fit$hazard,xlab='Time', ylab='Rate/person-days',type='l')
   points(fit$raw.data$time,fit$raw.data$raw.hazard,cex=.3, lwd=3,col=1)

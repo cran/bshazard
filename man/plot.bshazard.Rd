@@ -27,7 +27,6 @@ It works only if there are covariates. }
 a vector of integers specifying line width for each curve. The default value is 1. }
    \item{lty}{
 a vector of integers specifying line types for each curve. The default value is 1.
-%%     ~~Describe \code{lty} here~~
 }
  \item{xlab}{
  	label given to the x-axis. }
@@ -38,8 +37,8 @@ a vector of integers specifying line types for each curve. The default value is 
   \item{col.fill}{
  	the color for filling the polygon. The default is lightgrey.}
 
-  \item{\dots}{
-%%     ~~Describe \code{\dots} here~~
+  \item{\dots}{	
+other arguments that will be passed forward to the underlying plot method, such as xlab or ylab.
 }
 }
 
@@ -48,7 +47,6 @@ a vector of integers specifying line types for each curve. The default value is 
 \seealso{
 bshazard,summary.bshazard,print.bshazard}
 \examples{
-data(lung)
 fit<-bshazard(Surv(time, status==2) ~ 1,data=lung)
 plot(fit)
 

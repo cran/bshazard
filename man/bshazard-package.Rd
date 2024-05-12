@@ -35,7 +35,7 @@ Oxford University Press
 \keyword{ smooth }  
 
 \examples{
-data(lung,package="survival")
+data(cancer,package="survival")
   fit<-bshazard(Surv(time, status==2) ~ 1,data=lung)
   plot(fit)
 }
